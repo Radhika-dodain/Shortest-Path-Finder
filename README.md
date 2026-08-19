@@ -1,4 +1,4 @@
-# India Shortest Path Finder
+# Shortest Path Finder
 
 An interactive web-based pathfinding visualizer that demonstrates **Dijkstra’s Algorithm** by calculating and highlighting the shortest highway route between major cities, state capitals, and union territories in India.
 
