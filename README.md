@@ -1,35 +1,39 @@
-# Shortest Path Finder
+# India Shortest Path Finder
 
-An interactive pathfinding project that demonstrates **Dijkstra’s Algorithm** by finding the shortest path between selected cities in India.
+An interactive web-based pathfinding visualizer that demonstrates **Dijkstra’s Algorithm** by calculating and highlighting the shortest highway route between major cities, state capitals, and union territories in India.
 
-## 📌 About the Project
+---
 
-This project is a simple visualization of **Dijkstra’s shortest path algorithm** on a weighted graph of Indian cities.
+## Features
 
-Users can select a **source city** and a **destination city**, after which the application calculates and displays the shortest path between them.
+- **Extensive Geographic Dataset**: Over 45 major cities mapped, covering all 28 states, 8 Union Territories, and prominent commercial hubs.
+- **Maritime Integration**: Includes shipping/ferry channels connecting island Union Territories like Port Blair (Andaman & Nicobar) and Kavaratti (Lakshadweep) to coastal ports.
+- **Interactive Map Control**: Drag, zoom, and click directly on map markers to open customized Popups and assign starting/ending locations.
+- **Quick Lookup Directory**: A search-enabled modal that dynamically filters cities and states alphabetically.
+- **Path Highlight & Fit**: Automatically draws a high-contrast path line along the calculated highway segments and dynamically pans/zooms the map to fit the route.
+- **Responsive Layout**: Glassmorphic overlay cards adapt seamlessly to mobile, tablet, and desktop viewports.
 
-The project was built to understand how Dijkstra’s Algorithm works and how graph algorithms can be represented visually.
+---
 
-## ✨ Features
+##  Technologies Used
 
-- Select a source city
-- Select a destination city
-- Find the shortest path using **Dijkstra’s Algorithm**
-- Visualize the calculated path on a graph
-- Display the calculated distance
-- Interactive representation of cities and connections
+- **Frontend Core**: HTML5 (Semantic Structure), Vanilla CSS3 (Custom Variables, Transitions), Vanilla JS (ES6+ Logic)
+- **Map Render engine**: [Leaflet.js](https://leafletjs.com/) (Open-source interactive mapping)
+- **Map Base Tiles**: CartoDB Positron (Elegant, distraction-free light tile schema)
+- **Typography**: Google Fonts (Outfit)
 
-## 🧠 Algorithm Used
+---
 
-### Dijkstra’s Algorithm
+##  Dijkstra's Algorithm implementation
 
-Dijkstra’s Algorithm is a **greedy graph algorithm** used to find the shortest path from a source vertex to other vertices in a weighted graph with non-negative edge weights.
+Dijkstra's Algorithm is a greedy graph traversal algorithm used to find the shortest paths between nodes in a weighted graph.
 
 In this project:
+- **Vertices (Nodes)**: 45 Indian cities containing exact geographical coordinates (Latitude/Longitude).
+- **Edges**: Real-world national highway sections connecting neighboring cities.
+- **Edge Weights**: Actual highway distances (in kilometers) or maritime ferry distances.
+- **Path Reconstruct**: Rebuilt back-to-front via parent-node pointers and visualized progressively.
 
-- **Vertices (nodes)** → Indian cities
-- **Edges** → Connections between cities
-- **Edge weights** → Distance between connected cities
-- **Source** → Starting city
-- **Destination** → Target city
+---
 
+## Live Demo - [Shortest Path Finder](https)
